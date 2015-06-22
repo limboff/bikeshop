@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Bikeshop</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,400italic' rel='stylesheet' type='text/css'>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+	<link rel="stylesheet" href="css/style.css"/>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<!--<div class="&lt;!&ndash;bike-footer&ndash;&gt;">
+    <div class="container">
+        <nav class="navbar navbar-footer">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="img/logo-black.png" alt=""></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">Bicycles</a></li>
+                <li><a href="#">Parts</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Extras</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>-->
+
+<header class="bike-header">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bike-example-navbar-collapse-1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""/></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bike-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bicycles</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Fixed / Single speed</a></li>
+                                <li><a href="#">City Bikes</a></li>
+                                <li><a href="#">Premium Series</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Parts</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <a class="bike-nav-basket" href="#">
+
+                            <img src="img/basket.png" alt="basket"/></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<section class="bike-slider">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active" style="background-image: url('img/bg-slider.png'), url('img/slider1.jpg');">
+                <!--[if lt IE 9]>
+                <img src="img/slide1.jpg" alt=""/>
+                <![endif]-->
+                <div class="carousel-caption">
+                    <h1>Handmade Bicycle</h1>
+                    <p class="bike-carousel-byline">You <span>create</span> the <span>journey</span>, we supply the <span>parts</span>.</p>
+                    <a class="btn btn-default" href="#" role="button">Shop Bikes</a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url('img/bg-slider.png'), url('img/slider2.jpg');">
+                <!--[if lt IE 9]>
+                <img src="img/slide2.jpg" alt=""/>
+                <![endif]-->
+                <div class="carousel-caption">
+                    <h1>Handmade Bicycle</h1>
+                    <p class="bike-carousel-byline">You <span>create</span> the <span>journey</span>, we supply the <span>parts</span>.</p>
+                    <a class="btn btn-default" href="#" role="button">Shop Bikes</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <a class="bike-scroller" href="#category">
+        <img src="img/scroll.png" alt=""/>
+    </a>
+</section>
+<section class="bike-categories">
+	<div class="container">
+		<h2>Categories</h2>
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<div class="bike-cat-item">
+					<div class="bike-cat-desc">
+						<img src="img/categories1.jpg" alt="img"/>
+						<h3>FIXED / SINGLE SPEED</h3>
+						<p>Are You ready for the 27.5?</p>
+					<a class="btn btn-category" href="#">Go To Store</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<div class="bike-cat-item">
+					<div class="bike-cat-desc">
+						<img src="img/categories2.jpg" alt="img"/>
+						<h3>PREMIUM SERIES</h3>
+						<p>Exclusive Bike Components</p>
+						<a class="btn btn-category" href="#">Go To Store</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<div class="bike-cat-item">
+					<div class="bike-cat-desc">
+						<img src="img/categories3.jpg" alt="img"/>
+						<h3>CITY BIKES</h3>
+						<p>Street Playground</p>
+						<a class="btn btn-category" href="#">Go To Store</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<section class="bike-popular">
+	<div class="">
+		<h2>Popular Bikes</h2>
+
+		<div id="owl-example" class="owl-carousel">
+			<div>
+				<img src="img/item2.jpg" alt="bike"/>
+				<div class="bike-bike-desc">
+					<h4>Fixed Gear</h4>
+					<p class="bike-price">$249.00</p>
+				</div>
+				<div class="bike-bike-form">
+					<form action="#">
+						<select name="bike-options" id="bike-options1">
+							<option>OPTION1</option>
+							<option>OPTION2</option>
+							<option>OPTION3</option>
+						</select>
+					</form>
+					<a class="btn btn-default" href="#">Buy</a>
+				</div>
+			</div>
+			<div>
+				<img src="img/item1.jpg" alt="bike"/>
+
+				<div class="bike-bike-desc">
+					<h4>Big Boy Ultra</h4>
+
+					<p class="bike-price">$249.00</p>
+
+				</div>
+				<div class="bike-bike-form">
+					<form action="#">
+						<select name="bike-options" id="bike-options2">
+							<option>OPTION1</option>
+							<option>OPTION2</option>
+							<option>OPTION3</option>
+						</select>
+					</form>
+					<a class="btn btn-default" href="#">Buy</a>
+				</div>
+			</div>
+			<div>
+				<img src="img/item3.jpg" alt="bike"/>
+
+				<div class="bike-bike-desc">
+					<h4>Sanchaez</h4>
+
+					<p class="bike-price">$249.00</p>
+
+				</div>
+				<div class="bike-bike-form">
+					<form action="#">
+						<select name="bike-options" id="bike-options3">
+							<option>OPTION1</option>
+							<option>OPTION2</option>
+							<option>OPTION3</option>
+						</select>
+					</form>
+					<a class="btn btn-default" href="#">Buy</a>
+				</div>
+			</div>
+			<div>
+				<img src="img/item2.jpg" alt="bike"/>
+
+				<div class="bike-bike-desc">
+					<h4>Fixed Gear</h4>
+
+					<p class="bike-price">$249.00</p>
+
+				</div>
+				<div class="bike-bike-form">
+					<form action="#">
+						<select name="bike-options" id="bike-options4">
+							<option>OPTION1</option>
+							<option>OPTION2</option>
+							<option>OPTION3</option>
+						</select>
+					</form>
+					<a class="btn btn-default" href="#">Buy</a>
+				</div>
+			</div>
+			<div>
+				<img src="img/item1.jpg" alt="bike"/>
+
+				<div class="bike-bike-desc">
+					<h4>Big Boy Ultra</h4>
+
+					<p class="bike-price">$249.00</p>
+
+				</div>
+				<div class="bike-bike-form">
+					<form action="#">
+						<select name="bike-options" id="bike-options5">
+							<option>OPTION1</option>
+							<option>OPTION2</option>
+							<option>OPTION3</option>
+						</select>
+					</form>
+					<a class="btn btn-default" href="#">Buy</a>
+				</div>
+			</div>
+			<div>
+				<img src="img/item3.jpg" alt="bike"/>
+
+				<div class="bike-bike-desc">
+					<h4>Sanchaez</h4>
+
+					<p class="bike-price">$249.00</p>
+
+				</div>
+				<div class="bike-bike-form">
+					<form action="#">
+						<select name="bike-options" id="bike-options6">
+							<option>OPTION1</option>
+							<option>OPTION2</option>
+							<option>OPTION3</option>
+						</select>
+					</form>
+					<a class="btn btn-default" href="#">Buy</a>
+				</div>
+			</div>
+			<div>
+				<img src="img/item2.jpg" alt="bike"/>
+
+				<div class="bike-bike-desc">
+					<h4>Fixed Gear</h4>
+
+					<p class="bike-price">$249.00</p>
+
+				</div>
+				<div class="bike-bike-form">
+					<form action="#">
+						<select name="bike-options" id="bike-options7">
+							<option>OPTION1</option>
+							<option>OPTION2</option>
+							<option>OPTION3</option>
+						</select>
+					</form>
+					<a class="btn btn-default" href="#">Buy</a>
+				</div>
+			</div>
+			<div>
+				<img src="img/item1.jpg" alt="bike"/>
+
+				<div class="bike-bike-desc">
+					<h4>Big Boy Ultra</h4>
+
+					<p class="bike-price">$249.00</p>
+
+				</div>
+				<div class="bike-bike-form">
+					<form action="#">
+						<select name="bike-options" id="bike-options8">
+							<option>OPTION1</option>
+							<option>OPTION2</option>
+							<option>OPTION3</option>
+						</select>
+					</form>
+					<a class="btn btn-default" href="#">Buy</a>
+				</div>
+			</div>
+			<div>
+				<img src="img/item3.jpg" alt="bike"/>
+
+				<div class="bike-bike-desc">
+					<h4>Sanchaez</h4>
+
+					<p class="bike-price">$249.00</p>
+
+				</div>
+				<div class="bike-bike-form">
+					<form action="#">
+						<select name="bike-options" id="bike-options9">
+							<option>OPTION1</option>
+							<option>OPTION2</option>
+							<option>OPTION3</option>
+						</select>
+					</form>
+					<a class="btn btn-default" href="#">Buy</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</section>
+
+<section class="bike-contactus">
+	<div class="container text-center">
+		<h2>Contact Us</h2>
+		<p>Please contact us for all inquiries and purchase options.</p>
+
+		<form action="#" class="bike-contact-form">
+			<div class="bike-form-horizontal">
+				<div class="form-group bike-left">
+					<label class="sr-only" for="name">Name</label>
+					<input type="text" class="form-control" id="name" placeholder="Name">
+				</div>
+				<div class="form-group bike-right">
+					<label class="sr-only" for="surname">Surname</label>
+					<input type="text" class="form-control" id="surname" placeholder="Surname">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="sr-only" for="email">Email</label>
+				<input type="email" class="form-control" id="email" placeholder="User@Domen.com">
+			</div>
+			<div class="form-group">
+				<label class="sr-only" for="textarea">Message</label>
+				<textarea class="form-control" placeholder="Message" rows="7" id="textarea"></textarea>
+			</div>
+			<button type="submit" class="btn bike-btn-send">Send</button>
+		</form>
+
+	</div>
+</section>
+
+<footer class="bike-footer">
+	<div class="container">
+		<nav class="navbar navbar-footer">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#"><img src="img/logo-black.png" alt=""></a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="#">Bicycles</a></li>
+				<li><a href="#">Parts</a></li>
+				<li><a href="#">Accessories</a></li>
+				<li><a href="#">Extras</a></li>
+			</ul>
+		</nav>
+	</div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+</script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="owl-carousel/owl.carousel.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#owl-example").owlCarousel({
+            items : 3,
+            itemsDesktop : false,
+            itemsMobile	: [479,1],
+            autoPlay : true,
+            stopOnHover : true,
+            pagination : false
+        })
+    });
+</script>
+<script>
+    $('.bike-scroller').on('click', function (e) {
+        $('html,body').stop().animate({scrollTop: $('.bike-categories').offset().top}, 1000);
+        e.preventDefault();
+    });
+</script>
+</body>
+</html>
